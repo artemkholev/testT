@@ -1,8 +1,9 @@
 @import '@/app/styles/vars';
 
 .header-container {
-  height: 120px;
+  background-color: #1F2229;
+  height: 40px;
+  width: 100%;
   z-index: 1000;
-  display: flex;
-  
+  display: flex; 
 }

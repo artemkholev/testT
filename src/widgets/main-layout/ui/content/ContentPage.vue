@@ -1,9 +1,9 @@
 <template>
-    <sidebar-elem>
+    <SidebarElem>
       <div class="sidebar">
         
       </div>
-    </sidebar-elem>
+    </SidebarElem>
   
     <div class="content">
         <!-- {{ $route.meta.title }} -->
@@ -12,8 +12,8 @@
     </div>
   </template>
   
-  <script setup lang="ts">
- 
+  <script setup lang="js">
+ import {SidebarElem} from '@/shared/ui'
   </script>
   
   <style src="./ContentPage.style.scss" lang="scss" scoped />
