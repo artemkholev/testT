@@ -13,22 +13,16 @@
   
   <script setup lang="ts">
   import { useSidebarStore } from '@/shared/stores/sidebar';
-  import { useThemeStore } from '@/shared/stores/theme';
   import { computed } from '@vue/reactivity';
   import { storeToRefs } from 'pinia';
-  
-  //theme
-  const themeStore = useThemeStore();
-  const { isDarkTheme } = storeToRefs(themeStore);
   
   //sidebar
   const sidebarStore = useSidebarStore();
   const { isOpenSidebar } = storeToRefs(sidebarStore);
   const { toggleSidebar } = sidebarStore
   
-  //
   const isDarkStyle = computed(() => {
-    return isDarkTheme.value ? 'white' : 'black';
+    return 'white';
   });
   
   defineOptions({

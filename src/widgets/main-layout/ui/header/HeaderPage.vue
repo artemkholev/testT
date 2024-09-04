@@ -35,6 +35,7 @@
                     </clipPath>
                     </defs>
                 </svg>
+                <BurgerElem class="burger"/>
             </div>
         </div>
     </div>   
@@ -55,7 +56,7 @@
 </template>
 
 <script setup lang="js">
-
+import { BurgerElem } from '@/shared/ui/burger-elem'
 </script>
 
 <style src="./HeaderPage.style.scss" lang="scss" scoped></style>

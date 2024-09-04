@@ -13,7 +13,13 @@
   </template>
   
   <script setup lang="js">
- import {SidebarElem} from '@/shared/ui'
+import { useSidebarStore } from '@/shared/stores/sidebar';
+
+import {SidebarElem} from '@/shared/ui'
+
+ //sidebar
+const sidebarStore = useSidebarStore();
+const { toggleSidebar } = sidebarStore
   </script>
   
   <style src="./ContentPage.style.scss" lang="scss" scoped />
