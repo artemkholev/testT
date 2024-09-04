@@ -1,3 +1,4 @@
+@use '@/app/styles/breakpoints';
 @import '@/app/styles/vars';
 
 .header-container {
@@ -65,4 +66,21 @@
 
 .border-bottom_exact {
   height: 100%;
+}
+
+@media (max-width: breakpoints.$lg) {
+  .header {
+    .navigation {
+      display: none;
+    }
+
+    .header-container {
+      .wrapping {
+        .location {
+          display: none;
+        }
+      } 
+    } 
+  }
+  
 }
