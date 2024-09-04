@@ -4,6 +4,17 @@
 
 }
 
-.sidebar {
-  
+.sidebar { 
+    .navigation {
+        list-style-type: none;
+
+        li {
+            font-size: larger;
+            border-bottom: 1px solid #EDEDED;
+            padding: 10px 0;
+            a {
+                color:#959597;
+            }
+        }
+    }
 }

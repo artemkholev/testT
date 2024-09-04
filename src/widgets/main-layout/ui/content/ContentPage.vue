@@ -1,7 +1,14 @@
 <template>
     <SidebarElem>
       <div class="sidebar">
-        
+          <ul class="navigation">
+              <li><router-link class="link" to="/">Преимущества Tele2</router-link></li>
+              <li><router-link class="link" to="/1">Тарифы</router-link></li>
+              <li><router-link class="link" to="/2">Акции и спецпредложения</router-link></li>
+              <li><router-link class="link" to="/3">Промотариф Tele2</router-link></li>
+              <li><router-link class="link" to="/4">Технология eSIM</router-link></li>
+              <li><router-link class="link" to="/5">Подключение нового абонента</router-link></li>
+          </ul>
       </div>
     </SidebarElem>
   

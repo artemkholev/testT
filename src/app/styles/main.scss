@@ -57,7 +57,3 @@ input {
     width: calc(288px + (728 - 288) * ((100vw - 320px) / (767 - 320)));
   }
 }
-.active {
-  color: $main-color;
-  border-bottom: 2px solid $main-color;
-}

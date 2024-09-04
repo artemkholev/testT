@@ -1,14 +1,14 @@
 <template>
     <div class="sidebar-backdrop" @click="toggleSidebar" v-if="isOpenSidebar"></div>
     <transition name="slide">
-        <div v-if="isOpenSidebar"
-                class="sidebar-panel">
+        <div v-if="isOpenSidebar" class="sidebar-panel">
             <slot></slot>
         </div>
     </transition>
 </template>
 
 <script setup lang="ts">
+import { BurgerElem } from '@/shared/ui/burger-elem'
 import { useSidebarStore } from '@/shared/stores/sidebar';
 import { storeToRefs } from 'pinia';
 
